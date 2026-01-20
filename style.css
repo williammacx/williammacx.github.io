@@ -73,7 +73,7 @@ a {
 }
 
 .img-nav-border {
-  border: 3px solid var(--nav-color);
+  border: 3px solid var(--accent-color);
   border-radius: 10px;
   padding: 5px;
 }
