@@ -4,16 +4,23 @@
   <a href="hobbies.html">Hobbies</a>
 </div>
 
+:root {
+  --nav-color: #1f1f1f;
+  --container-color: #1b1b1b;
+  --accent-color: #66b2ff;
+  --text-color: #eaeaea;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
+  font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #eaeaea;
+  color: var(--text-color);
 }
 
 .nav {
-  background-color: #1f1f1f;
+  background-color: var(--nav-color);
   padding: 15px;
   text-align: center;
 }
@@ -26,6 +33,7 @@ body {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 .nav a:hover {
@@ -33,18 +41,39 @@ body {
 }
 
 .container {
-  background-color: #1b1b1b;
+  background-color: var(--container-color);
   width: 80%;
+  max-width: 900px;
   margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 h1, h2 {
-  color: #66b2ff;
+  color: var(--accent-color);
 }
 
 a {
   color: #7cc7ff;
+}
+
+.img-nav-border {
+  border: 3px solid var(--nav-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.img-nav-border:hover {
+  box-shadow: 0 0 12px rgba(102, 178, 255, 0.6);
+  transition: box-shadow 0.2s ease;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--nav-color);
+  padding: 4px;
+  display: block;
+  margin: 20px auto;
 }
