@@ -72,6 +72,17 @@ a {
   color: #7cc7ff;
 }
 
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+img + p,
+img + ul,
+img + h2 {
+  margin-top: 20px;
+}
+
 .img-nav-border {
   border: 3px solid var(--accent-color);
   border-radius: 10px;
